@@ -21,44 +21,44 @@ const itemVariants = {
     visible: {opacity: 1, y: 0}
 }
 
-const FeatureSection = () => {
+const DiscoverySection = () => {
   return (
     <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={{containerVariants}}
-        className='py-24 px-6 sm:px-8 lg:px-12 xl:px-16 bg-white'
+        className='py-24 px-6 sm:px-8 lg:px-12 xl:px-16 bg-blue-50'
     >
         <div className="max-w-4xl xl:max-w-6xl mx-auto">
             <motion.h2 
                 variants={itemVariants}
                 className="text-3xl font-bold text-center mb-12 w-full sm:w-2/3 mx-auto"
             >
-                Quickly find the home you want using our effective search filters!
+                We build a tailored procurement strategy that saves you time and money.
             </motion.h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
-                {[0, 1, 2].map((index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 xl:gap-16">
+                {[0, 1, 2, 3].map((index) => (
                     <motion.div key={index} variants={itemVariants}>
-                        <FeatureCard 
+                        <DiscoveryCard 
                             imageSrc={`/landing-search${3 - index}.png`}
                             title={
                                 [
-                                    "Trustworthy and Verified Listings",
-                                    "Browse Rental Listings with Ease",
-                                    "Simplify Your Rental Search with Advanced search"
+                                    "Discover ",
+                                    "Strategize ",
+                                    "Source and Negotiation",
+                                    "Deliver & Optimize "
                                 ][index]
                             }
                             description={
                                 [
-                                    "Discover the best rental options with user reviews and ratings",
-                                    "Get access to user reviews and ratings for a better understanding of rental options",
-                                    "Find trustworthy and verified rental listings to ensure a hassle-free experience"
+                                    "We analyze your current spending, needs, and challenges",
+                                    "We design a sourcing plan tailored to your goals",
+                                    "We tap into our supplier network to secure the best deals",
+                                    "We manage orders, quality, and continuous improvement"
                                 
                                 ][index]
                             }
-                            linkText={['Explore', "Search", 'Discover'][index]}
-                            linkHref={['/explore', '/search', '/discover'][index]}
                         />
                     </motion.div>
                     
@@ -71,15 +71,13 @@ const FeatureSection = () => {
   )
 }
 
-interface FeatureCardProps {
+interface DiscoveryCardProps {
     imageSrc: string;
     title: string;
     description: string;
-    linkText: string;
-    linkHref: string;
 }
 
-const FeatureCard = ({imageSrc, title, description, linkText, linkHref}: FeatureCardProps) => {
+const DiscoveryCard = ({imageSrc, title, description}: DiscoveryCardProps) => {
     return (
         <div className="text-center">
             <div className="p-4 rounded-xl mb-4 flex justify-center items-center h-48">
@@ -94,14 +92,14 @@ const FeatureCard = ({imageSrc, title, description, linkText, linkHref}: Feature
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             <p className="mb-4">{description}</p>
             <Link
-                href={linkHref}
+                href="/"
                 className="inline-block border border-gray-300 rounded px-4 py-2 hover:bg-gray-100"
                 scroll={false}
             >
-                {linkText}
+                {/* {linkText} */}
             </Link>
         </div>
     )
 }
 
-export default FeatureSection
+export default DiscoverySection;

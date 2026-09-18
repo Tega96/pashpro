@@ -35,7 +35,7 @@ const FeatureSection = () => {
                 variants={itemVariants}
                 className="text-3xl font-bold text-center mb-12 w-full sm:w-2/3 mx-auto"
             >
-                Quickly find the home you want using our effective search filters!
+                From sourcing to delivery, we've built every feature with your bottom line in mind.
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
                 {[0, 1, 2].map((index) => (
@@ -44,17 +44,20 @@ const FeatureSection = () => {
                             imageSrc={`/landing-search${3 - index}.png`}
                             title={
                                 [
-                                    "Trustworthy and Verified Listings",
-                                    "Browse Rental Listings with Ease",
-                                    "Simplify Your Rental Search with Advanced search"
+                                    "Smart Supplier Matching ",
+                                    " End-to-Order Management ",
+                                    "Quality Assurance",
+                                    "Global Sourcing Power",
+                                    "Flexible Engagement "
                                 ][index]
                             }
                             description={
                                 [
-                                    "Discover the best rental options with user reviews and ratings",
-                                    "Get access to user reviews and ratings for a better understanding of rental options",
-                                    "Find trustworthy and verified rental listings to ensure a hassle-free experience"
-                                
+                                    "We pair your needs with the best-fit suppliers based on price, quality, and location",
+                                    "We handle quotes, orders, documentation, and follow-ups so you don't have to",
+                                    "Every product is inspected against your specifications before it ships",
+                                    "Tap into international markets without the language, logistics, or compliance headaches",
+                                    "Use us for a single project or outsource your entire procurement function"
                                 ][index]
                             }
                             linkText={['Explore', "Search", 'Discover'][index]}

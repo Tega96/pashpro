@@ -8,7 +8,7 @@ const CallToAction = () => {
   return (
     <div className="relative py-24">
       <Image 
-        src="/landing-call-to-action.jpg"
+        src="/landing-call-to-action.png"
         fill
         alt="Fayhoo call to action Image"
         className="object-cover"
