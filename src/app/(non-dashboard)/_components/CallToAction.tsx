@@ -1,5 +1,6 @@
 "use client"
 
+import { buttonVariants } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -25,26 +26,26 @@ const CallToAction = () => {
             <div className="flex flex-col md:flex-row justify-between items-center">
                 <header className="mb-6 md:mb-0 md:mr-10">
                     <h2 className="text-2xl font-bold text-white">
-                        Find Your Dream Rental Property
+                        Find Out How Much You Could Be Saving — In Just 30 Minutes
                     </h2>
                 </header>
                 <div className="">
                     <p className="text-white mb-3">
-                        Discover a wide range of rental properties in your desired location. 
+                        Book a free, no-obligation consultation. We'll review your current purchasing and show you exactly where the savings are hiding — with real numbers, not vague promises.
                     </p>
                     <div className="flex justify-center md:justify-start gap-4">
                         <button
                             onClick={() => window.scrollTo({ top: 0, behavior: "smooth"})}
                             className="inline-block text-primary-700 bg-white rounded-lg px-6 py-3 font-semibold hover:text-primary-50 hover:bg-primary-500"
                         >
-                            Search
+                            Get Started
                         </button>
                         <Link
-                            href="/signup"
-                            className="inline-block text-white bg-secondary-500 rounded-lg px-6 py-3 font-semibold hover:bg-secondary-600"
+                            href="/#"
+                            className={`inline-block text-white bg-secondary-500 rounded-lg px-6 py-3 font-semibold hover:bg-secondary-600 `}
                             scroll={false}
                         >
-                            Sign Up
+                            call us now
                         </Link>
                     </div>
                 </div>

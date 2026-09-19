@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
 
                 <nav className="">
-                    <ul className="flex space-x-6">
+                    <ul className="hidden md:flex space-x-6">
                         {NAVLINK.map(({linkTitle, linkHref}) => (
                             <li key={linkTitle}>
                                 <Link href={linkHref}>{linkTitle}</Link>
