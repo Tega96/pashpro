@@ -449,7 +449,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {processStages.map((stage, idx) => (
               <Card key={idx} className="border-border bg-card relative">
                 <CardHeader className="pb-3">
