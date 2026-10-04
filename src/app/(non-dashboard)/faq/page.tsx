@@ -1,9 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import {FaqCard} from "../_components/FaqCard";
-import HeroSection from "../_components/HeroSection";
-import { ArrowRight, Badge, CheckCircle2, HelpCircle, Search, ShieldQuestion } from "lucide-react";
+import { ArrowRight, Badge, CheckCircle2, HelpCircle, HelpCircleIcon, Search, ShieldQuestion } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -40,28 +38,28 @@ const FAQS = () => {
             {/* Header */}
             <section className="pt-12 md:pt-16 pb-12 border-b border-border bg-gradient-to-b from-muted/30 via-background to-background">
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 space-y-6">
-                <Badge className={`gap-1.5 py-1 ${buttonVariants({variant: 'outline'})}`}>
-                    <HelpCircle className="h-3.5 w-3.5 text-primary" />
-                    Knowledge Base &amp; FAQ
-                </Badge>
-                <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground max-w-3xl leading-tight">
-                    Frequently Asked Questions
-                </h1>
-                <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                    Everything you need to know about our institutional procurement servicing, fee models, security compliance, and ERP integration.
-                </p>
+                    <Badge className={`gap-1.5 py-1 ${buttonVariants({variant: 'outline'})}`}>
+                        <HelpCircleIcon className="h-3.5 w-3.5 text-primary" />
+                        Knowledge Base &amp; FAQ
+                    </Badge>
+                    <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground max-w-3xl leading-tight">
+                        Frequently Asked Questions
+                    </h1>
+                    <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+                        Everything you need to know about our institutional procurement servicing, fee models, security compliance, and ERP integration.
+                    </p>
 
-                {/* Search Bar */}
-                <div className="max-w-xl relative pt-2">
-                    <Search className="absolute left-3.5 top-5 h-4 w-4 text-muted-foreground" />
-                    <Input
-                    type="text"
-                    placeholder="Search by topic, keyword (e.g. gain-share, ERP, ESG, timeline)..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-10 h-11 bg-background border-input"
-                    />
-                </div>
+                    {/* Search Bar */}
+                    <div className="max-w-xl relative pt-2">
+                        <Search className="absolute left-3.5 top-5 h-4 w-4 text-muted-foreground" />
+                        <Input
+                        type="text"
+                        placeholder="Search by topic, keyword (e.g. gain-share, ERP, ESG, timeline)..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="pl-10 h-11 bg-background border-input"
+                        />
+                    </div>
                 </div>
             </section>
 

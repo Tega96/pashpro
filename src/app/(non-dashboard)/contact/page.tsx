@@ -218,7 +218,7 @@ export default function ContactPage() {
                           name="phone"
                           type="tel"
                           required
-                          placeholder="+1 (555) 234-5678"
+                          placeholder="+234 803 123 4567"
                           value={formData.phone}
                           onChange={handleChange}
                         />
@@ -251,16 +251,16 @@ export default function ContactPage() {
                           className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring text-foreground"
                         >
                           <option value="$3M - $10M Annual Spend" className="bg-popover text-popover-foreground">
-                            $3M – $10M USD
+                            N3M – N10M 
                           </option>
                           <option value="$10M - $30M Annual Spend" className="bg-popover text-popover-foreground">
-                            $10M – $30M USD
+                            N10M – N30M 
                           </option>
                           <option value="$30M - $75M Annual Spend" className="bg-popover text-popover-foreground">
-                            $30M – $75M USD
+                            N30M – N75M 
                           </option>
                           <option value="$75M+ Global Enterprise Spend" className="bg-popover text-popover-foreground">
-                            $75M+ USD (Global Enterprise)
+                            N75M+  (Global Enterprise)
                           </option>
                         </select>
                       </div>

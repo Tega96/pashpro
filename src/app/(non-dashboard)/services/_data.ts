@@ -15,6 +15,7 @@ import {
   Truck,
   Briefcase,
   Sparkles,
+  Fuel,
 } from "lucide-react"
 
 export const detailedServices = [
@@ -129,6 +130,11 @@ export const detailedServices = [
 ]
 
 export const categoriesMatrix = [
+  {
+    icon: Fuel,
+    name: "Oil and gas",
+    scope: "Strategic sourcing, Contract and Negotiation management, category management ",
+  },
   {
     icon: Package,
     name: "Direct Materials & Packaging",

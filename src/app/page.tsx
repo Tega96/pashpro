@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-// import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator"
 // import { SavingsCalculator } from "@/components/home/savings-calculator"
 
 const coreServices = [
@@ -258,7 +258,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  {/* <Separator /> */}
+                  <Separator />
 
                   <div className="flex items-center justify-between text-xs pt-1">
                     <span className="text-muted-foreground">Target Client ROI:</span>
@@ -317,7 +317,7 @@ export default function HomePage() {
                 Managed Spend Portfolio
               </span>
               <p className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground font-mono">
-                $480M+
+                N480M+
               </p>
               <p className="text-xs text-muted-foreground pt-1">
                 Direct, indirect, and capital expenditure across 12 countries.
@@ -432,9 +432,9 @@ export default function HomePage() {
       </section>
 
       {/* Interactive Savings Calculator */}
-      <section className="container mx-auto max-w-7xl px-4 sm:px-6">
-        {/* <SavingsCalculator /> */}
-      </section>
+      {/* <section className="container mx-auto max-w-7xl px-4 sm:px-6">
+        <SavingsCalculator />
+      </section> */}
 
       {/* 5-Stage Procurement Lifecycle */}
       <section className="border-y border-border bg-muted/20 py-16">

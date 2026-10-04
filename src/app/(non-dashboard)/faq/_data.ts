@@ -18,7 +18,7 @@ export const faqData: FAQItem[] = [
     category: "sourcing",
     question: "How quickly can our organization realize measurable cost savings?",
     answer:
-      "For targeted RFx tenders and contract renegotiations, initial hard-dollar savings are typically captured within 60 to 90 days. During Phase 1 (Spend Diagnostic, Days 1–30), we baseline your data and identify fast-win categories. By Day 60, multi-round supplier negotiations are concluded, and finalized rate cards take effect by Day 90 upon contract signature.",
+      "For targeted RFx tenders and contract renegotiations, initial money savings are typically captured within 60 to 90 days. During Phase 1 (Spend Diagnostic, Days 1–30), we baseline your data and identify fast-win categories. By Day 60, multi-round supplier negotiations are concluded, and finalized rate cards take effect by Day 90 upon contract signature.",
   },
   {
     id: "data-confidentiality",
@@ -46,7 +46,7 @@ export const faqData: FAQItem[] = [
     category: "pricing",
     question: "What spend volume is required to engage PashPro services?",
     answer:
-      "Our services are optimized for mid-market and enterprise organizations with at least $10M in annual addressable spend across direct or indirect categories. However, for specialized single-category RFx tenders (such as enterprise cloud software licensing, logistics freight, or packaging), we can effectively engage on spend thresholds starting at $3M.",
+      "Our services are optimized for mid-market and enterprise organizations with at least N20M in annual addressable spend across direct or indirect categories. However, for specialized single-category RFx tenders (such as enterprise cloud software licensing, logistics freight, or packaging), we can effectively engage on spend thresholds starting at N1M.",
   },
   {
     id: "supplier-vetting-esg",
